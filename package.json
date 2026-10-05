@@ -1,15 +1,10 @@
 {
-  "name": "product_catalog_server",
+  "name": "product-catalog-server",
   "version": "1.0.0",
-  "description": "JSON Server backend for Product Catalog",
-  "license": "ISC",
-  "author": "",
-  "type": "commonjs",
-  "main": "db.json",
   "scripts": {
-    "start": "npx json-server --watch db.json --host 0.0.0.0 --port $PORT"
+    "start": "node node_modules/json-server/lib/cli/bin.js --host 0.0.0.0 --port $PORT db.json"
   },
   "dependencies": {
-    "json-server": "^0.17.0"
+    "json-server": "0.17.4"
   }
 }
